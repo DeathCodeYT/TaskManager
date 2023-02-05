@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/da37e1d10a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Task Manager</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Tasks Manager</h2>
+    </nav>
+    <div id="taskEditor" class="taskEditContainer">
+        <div class="taskEditor">
+                <div id="taskID" class="m-e">
+                    <span>Id: </span><span class="taskID" id="${id}"></span>
+                </div>
+                <div id = "taskNamee" class="m-e">
+                    <span>Name: </span>
+                    <input class="editName" placeholder="Enter Task Name" type="text" name="name" id="task">
+                </div>
+                <div id="completeCheck" class="m-e">
+                    <span>Complete: </span> <input class="checkbox" type="checkbox" name="complete" id="checkComplete">
+                </div>
+                <button class="editBtn" id="editBtn">Edit</button>
+                <div class="taskStatus" id="formAlert"></div>
+        </div>
+        <a href="index.html">
+        <button id="backBtn" class="backBtn">Back to Tasks</button></a>
+    </div>
+</body>
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+<script src="editTask.js"></script>
+</html>

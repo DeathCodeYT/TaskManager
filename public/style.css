@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    height: 50px;
+}
+.loading{
+    font-size: 20px;
+    visibility: hidden;
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.m-e {
+    margin-bottom: 20px;
+}
+
+.taskEditor {
+    padding: 40px;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    width: 600px;
+    height: 400px;
+    box-shadow: 2px 8px 20px 0.2px rgba(192, 192, 192, 0.5);
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.editName {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 50px;
+    padding: 5px;
+}
+.taskID{
+    margin-left: 30px;
+    font-weight: normal;
+}
+.checkbox {
+    height: 20px;
+    width: 20px;
+    margin-left: 15px;
+}
+
+.editBtn{
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    background-color: rgb(61, 61, 243);
+    color: white;
+}
+.editBtn:hover{
+    outline: none;
+    background-color: rgb(79, 79, 248);
+}
+.editBtn:active{
+    background-color: rgb(61, 61, 243);
+}
+.taskEditContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.backBtn{
+    margin: 10px;
+    font-size: 25px;
+    border: none;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    height: 45px;
+    width: 250px;
+}
+.backBtn:hover{
+    outline: none;
+    background-color: rgb(73, 73, 73);
+}
+.backBtn:active{
+    background-color: rgb(46, 46, 46);
+}
+
+.taskCreator {
+    padding: 0px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    width: 600px;
+    height: 200px;
+    box-shadow: 2px 8px 20px 0.2px rgba(192, 192, 192, 0.5);
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+.taskStatus {
+    color:red;
+    margin-bottom: 20px;
+    display: "none";
+}
+.text-success{
+    color: green;
+}
+.editorHeading {
+    /* display: flex; */
+    padding: 5px;
+    text-align: center;
+    background-color: bisque;
+}
+
+.submitTask {
+    padding-top: 30px;
+    /* background-color: rgb(107, 107, 107); */
+}
+
+.submitTask input {
+    outline: none;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: large;
+    font-weight: 520;
+    width: 420px;
+    height: 50px;
+    margin-left: -10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(61, 61, 243);
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    /* transition: all 0.2s; */
+}
+
+.submitTask button {
+    margin-right: -20;
+    height: 50px;
+    position: relative;
+    left: -5px;
+    top: -2px;
+    box-sizing: border-box;
+    border-radius: 0 25px 25px 0;
+    color: white;
+    background-color: rgb(61, 61, 243);
+    width: 100px;
+    border: 2px solid rgb(61, 61, 243);
+    transition: all 0.3s;
+    /* border-left: none; */
+}
+.submitTask button:hover{
+    outline: none;
+    background-color: rgb(81, 81, 255);
+}
+.submitTask button:active{
+    background-color: rgb(61, 61, 243);
+}
+.submitTask input:focus {
+    border: 2px solid rgb(61, 61, 243);
+    border-right: none;
+}
+
+.taskForm {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.allTasks {
+    width: 600px;
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    height: 600px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 2px 8px 20px 0.2px rgba(192, 192, 192, 0.5);
+    padding: 20px;
+    margin: 10px;
+    transition: all 0.2s;
+    /* margin-bottom: 20px; */
+}
+
+.task:hover {
+    box-shadow: 2px 8px 20px 0.2px rgba(160, 160, 160, 0.7);
+}
+
+.icon {
+    font-size: 20px;
+    user-select: none;
+    /* border: 1px solid orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#taskName {
+    cursor: default;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.inComplete {
+    user-select: none;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 20px;
+    margin: 5px;
+    /* padding: 5px; */
+    color: rgb(128, 182, 47);
+    /* display: none; */
+    visibility: hidden;
+}
+
+.complete {
+    user-select: none;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 20px;
+    margin: 5px;
+    /* padding: 5px; */
+    color: rgb(128, 182, 47);
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+#taskFront {
+    align-items: center;
+}
+
+.editIcon {
+    display: flex;
+    border-radius: 50%;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    transition: all 0.2s;
+}
+
+.editIcon:hover {
+    color: blue;
+}
+
+.editIcon:active {
+    /* color: blue; */
+    border: none;
+    background-color: rgb(209, 209, 209);
+}
+
+.delete {
+    display: flex;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.delete:active {
+    color: red;
+    background-color: rgb(209, 209, 209);
+}
+
+.delete:hover {
+    color: red;
+}
